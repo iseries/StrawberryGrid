@@ -37,11 +37,11 @@ $breakpoints: sm 48em 46rem, md 62em 61rem, lg 75em 71rem !default;
 
 ## Compiling
 ### Command Line
-```
+```shell
 sass --update StrawberryGrid.scss:../dist/StrawberryGrid.css
 ```
 or minified:
-```
+```shell
 sass --update --style=compressed StrawberryGrid.scss:../dist/StrawberryGrid.min.css
 ```
 
