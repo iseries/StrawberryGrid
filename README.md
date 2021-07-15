@@ -35,7 +35,7 @@ $max-width: 1200px !default;
 $breakpoints: sm 48em 46rem, md 62em 61rem, lg 75em 71rem !default;
 ```
 
-## Compiling
+## Compile
 ### Command Line
 ```shell
 sass --update StrawberryGrid.scss:../dist/StrawberryGrid.css
