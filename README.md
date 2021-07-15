@@ -17,7 +17,7 @@ display: _inline-flex_, _align-content_, _align-items_, _align-self_, _justify-c
 
 ## Configuration
 Open StrawberryGrid.scss:
-```
+```scss
 // Set the number of columns
 $columns: 12 !default;
 
