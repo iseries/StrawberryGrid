@@ -1,5 +1,5 @@
 
-# StrawberryGrid
+# 🍓 StrawberryGrid
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/iseries/StrawberryGrid/blob/master/LICENSE)
 [![Latest Github release](https://img.shields.io/github/release/iseries/StrawberryGrid.svg)](https://github.com/iseries/StrawberryGrid/releases/latest)
 
