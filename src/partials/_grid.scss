@@ -111,10 +111,18 @@ $name: xs;
 }
 
 @each $breakpoint in $breakpoints {
-  $i: index($breakpoints, $breakpoint) + 1;
   $name: nth($breakpoint, 1);
   $size: nth($breakpoint, 2);
   $container: nth($breakpoint, 3);
+  /*
+   Since I use the approach of @hugeinc (flexboxgrid-sass) here,
+   I noticed that start- * classes are not interpreted correctly
+   because "order: -1" is used for all prefix classes. Accordingly,
+   e.g. md class do not overwrite the xs class. Fixed in this project
+   trough an iterator ($i), which counts the "order" down for the prefixes.
+  */
+  $i: index($breakpoints, $breakpoint) + 1;
+
   @media only screen and (min-width: $size) {
     .container {
       width: $container;
