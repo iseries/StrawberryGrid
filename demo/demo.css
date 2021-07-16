@@ -3,5 +3,17 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 /*! css for demo */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 html body { font-family: 'Source Sans Pro', sans-serif; background: beige; }
-html body section .row { background: antiquewhite; }
-html body section .row .col-xs { border: 1px dotted black; background: azure; }
+html body section .row { background: antiquewhite; padding: 10px; border: 1px dotted black; }
+html body section .row .col-xs,
+html body section .row .col-xs-1,
+html body section .row .col-xs-2,
+html body section .row .col-xs-3,
+html body section .row .col-xs-4,
+html body section .row .col-xs-5,
+html body section .row .col-xs-6,
+html body section .row .col-xs-7,
+html body section .row .col-xs-8,
+html body section .row .col-xs-9
+html body section .row .col-xs-10,
+html body section .row .col-xs-11,
+html body section .row .col-xs-12 { border: 1px dotted black; background: azure; }

@@ -41,6 +41,10 @@ $half-gutter-width: $gutter-width * .5;
 }
 
 $name: xs;
+.col-#{$name} {
+  @include col-common;
+  @include flex-basis(auto);
+}
 @for $i from 1 through $columns {
   .col-#{$name}-#{$i} {
     @include col-common;
@@ -58,7 +62,11 @@ $name: xs;
     }
   }
 }
-
+.col-#{$name} {
+  @include flex-grow(1);
+  @include flex-basis(0);
+  max-width: 100%;
+}
 .start-#{$name} {
   @include justify-content(flex-start);
   text-align: left;
@@ -103,6 +111,7 @@ $name: xs;
 }
 
 @each $breakpoint in $breakpoints {
+  $i: index($breakpoints, $breakpoint) + 1;
   $name: nth($breakpoint, 1);
   $size: nth($breakpoint, 2);
   $container: nth($breakpoint, 3);
@@ -110,6 +119,12 @@ $name: xs;
     .container {
       width: $container;
     }
+
+    .col-#{$name} {
+      @include col-common;
+      @include flex-basis(auto);
+    }
+
     @for $i from 1 through $columns {
       .col-#{$name}-#{$i} {
         @include col-common;
@@ -117,6 +132,7 @@ $name: xs;
         max-width: 100% / $columns * $i;
       }
     }
+
     @for $i from 0 through $columns {
       .col-#{$name}-offset-#{$i} {
         @include col-common;
@@ -127,6 +143,13 @@ $name: xs;
         }
       }
     }
+
+    .col-#{$name} {
+      @include flex-grow(1);
+      @include flex-basis(0);
+      max-width: 100%;
+    }
+
     .start-#{$name} {
       @include justify-content(flex-start);
       text-align: left;
@@ -163,7 +186,7 @@ $name: xs;
     }
 
     .first-#{$name} {
-      order: -1;
+      order: -#{$i};
     }
 
     .last-#{$name} {

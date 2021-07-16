@@ -12,15 +12,47 @@
 <body>
 <div class="wrapper container-fluid">
     <div class="row">
-        <div class="col-xs">
+        <div class="col-xs-12">
             <h1>🍓 StrawberryGrid - Demo</h1>
-            <p>demo bla</p>
+            <p>CSS Flex Grid</p>
             <!-- demo 1 -->
             <section id="demo1">
                 <div class="row">
-                    <div class="col-xs">1</div>
-                    <div class="col-xs">2</div>
-                    <div class="col-xs">3</div>
+                    <div class="col-xs-12 col-sm-4 col-md-12 col-lg-4">col 1</div>
+                    <div class="col-xs-12 col-sm-4 col-md-12 col-lg-4">col 2</div>
+                    <div class="col-xs-12 col-sm-4 col-md-12 col-lg-4">col 3</div>
+                </div>
+            </section>
+            <p>Order Columns</p>
+            <!-- demo 2 -->
+            <section id="demo2">
+                <div class="row">
+                    <div class="col-xs-6 last-xs">col 1</div>
+                    <div class="col-xs-6 first-xs">col 2</div>
+                    <div class="col-xs-6 last-sm">col 3</div>
+                    <div class="col-xs-6 first-sm">col 4</div>
+                    <div class="col-xs-6 last-md">col 5</div>
+                    <div class="col-xs-6 first-md">col 6</div>
+                    <div class="col-xs-6 last-lg">col 7</div>
+                    <div class="col-xs-6 first-lg">col 8</div>
+                </div>
+            </section>
+            <p>Start / End Position</p>
+            <!-- demo 3 -->
+            <section id="demo3">
+                <div class="row">
+                    <div class="col-xs-4">col 1</div>
+                    <div class="col-xs-8 col-xs-offset-4 start-xs">col 2</div>
+                    <div class="col-xs-12 col-sm-4 col-md-12 col-lg-4">col 3</div>
+                </div>
+            </section>
+            <p>auto Sizing</p>
+            <!-- demo 4 -->
+            <section id="demo4">
+                <div class="row">
+                    <div class="col-xs">col 1</div>
+                    <div class="col-xs">col 2</div>
+                    <div class="col-xs">col 3</div>
                 </div>
             </section>
         </div>
