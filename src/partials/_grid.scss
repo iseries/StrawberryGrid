@@ -41,10 +41,6 @@ $half-gutter-width: $gutter-width * .5;
 }
 
 $name: xs;
-.col-#{$name} {
-  @include col-common;
-  @include flex-basis(auto);
-}
 @for $i from 1 through $columns {
   .col-#{$name}-#{$i} {
     @include col-common;
@@ -62,11 +58,7 @@ $name: xs;
     }
   }
 }
-.col-#{$name} {
-  @include flex-grow(1);
-  @include flex-basis(0);
-  max-width: 100%;
-}
+
 .start-#{$name} {
   @include justify-content(flex-start);
   text-align: left;
@@ -118,11 +110,6 @@ $name: xs;
     .container {
       width: $container;
     }
-
-    .col-#{$name} {
-      @include col-common;
-      @include flex-basis(auto);
-    }
     @for $i from 1 through $columns {
       .col-#{$name}-#{$i} {
         @include col-common;
@@ -139,11 +126,6 @@ $name: xs;
           margin-left: 100% / $columns * $i;
         }
       }
-    }
-    .col-#{$name} {
-      @include flex-grow(1);
-      @include flex-basis(0);
-      max-width: 100%;
     }
     .start-#{$name} {
       @include justify-content(flex-start);
