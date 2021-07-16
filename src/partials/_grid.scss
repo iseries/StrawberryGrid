@@ -45,6 +45,7 @@ $name: xs;
   @include col-common;
   @include flex-basis(auto);
 }
+
 @for $i from 1 through $columns {
   .col-#{$name}-#{$i} {
     @include col-common;
@@ -52,6 +53,7 @@ $name: xs;
     max-width: 100% / $columns * $i;
   }
 }
+
 @for $i from 0 through $columns {
   .col-#{$name}-offset-#{$i} {
     @include col-common;
@@ -62,11 +64,13 @@ $name: xs;
     }
   }
 }
+
 .col-#{$name} {
   @include flex-grow(1);
   @include flex-basis(0);
   max-width: 100%;
 }
+
 .start-#{$name} {
   @include justify-content(flex-start);
   text-align: left;
@@ -118,7 +122,7 @@ $name: xs;
    Since I use the approach of @hugeinc (flexboxgrid-sass) here,
    I noticed that start- * classes are not interpreted correctly
    because "order: -1" is used for all prefix classes. Accordingly,
-   e.g. md class do not overwrite the xs class. Fixed in this project
+   e.g. md class do not interpreted over the xs class. Fixed in this project
    trough an iterator ($i), which counts the "order" down for the prefixes.
   */
   $i: index($breakpoints, $breakpoint) + 1;
