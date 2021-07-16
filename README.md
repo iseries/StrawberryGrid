@@ -3,7 +3,7 @@
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/iseries/StrawberryGrid/blob/master/LICENSE)
 [![Latest Github release](https://img.shields.io/github/release/iseries/StrawberryGrid.svg)](https://github.com/iseries/StrawberryGrid/releases/latest)
 
-Just another simple flexbox grid called **StrawberryGrid**. This was created because you always need a simple, functional, adjustable grid - without unnecessary features.
+Just another simple flexbox grid called 🍓 **StrawberryGrid**. This was created because you always need a simple, functional, adjustable grid - without unnecessary features.
 
 StrawberryGrid is using the **CSS Flexible Box Layout Module** (Flexbox) to positioning elements in horizontal and/or vertical stacks - basically our Grid with columns.
 StrawberryGrid includes features for all properties prefixed with _flex_, as well as _display: flex_,
@@ -11,7 +11,7 @@ display: _inline-flex_, _align-content_, _align-items_, _align-self_, _justify-c
 
 ## Contents
 - [Configuration](#configuration)
-- [Compiling](#compiling)
+- [Compiling](#compile)
 - [Usage and examples](#usage-and-examples)
 - [Development and contributing](#development-and-contributing)
 
@@ -37,10 +37,6 @@ $breakpoints: sm 48em 46rem, md 62em 61rem, lg 75em 71rem !default;
 
 ## Compile
 ### Command Line
-```shell
-sass --update StrawberryGrid.scss:../dist/StrawberryGrid.css
-```
-or minified:
 ```shell
 sass --update --style=compressed StrawberryGrid.scss:../dist/StrawberryGrid.min.css
 ```
