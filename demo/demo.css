@@ -13,7 +13,7 @@ html body section .row .col-xs-5,
 html body section .row .col-xs-6,
 html body section .row .col-xs-7,
 html body section .row .col-xs-8,
-html body section .row .col-xs-9
+html body section .row .col-xs-9,
 html body section .row .col-xs-10,
 html body section .row .col-xs-11,
-html body section .row .col-xs-12 { border: 1px dotted black; background: azure; }
+html body section .row .col-xs-12 { box-shadow: inset 0 0 1px #000000; background: azure; }

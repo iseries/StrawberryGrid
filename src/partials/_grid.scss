@@ -120,10 +120,10 @@ $name: xs;
   $container: nth($breakpoint, 3);
   /*
    Since I use the approach of @hugeinc (flexboxgrid-sass) here,
-   I noticed that start- * classes are not interpreted correctly
+   I noticed that first-* classes are not interpreted correctly
    because "order: -1" is used for all prefix classes. Accordingly,
-   e.g. md class do not interpreted over the xs class. Fixed in this project
-   trough an iterator ($i), which counts the "order" down for the prefixes.
+   e.g. on the md view, the .first-md class is not interpreted but .first-xs.
+   Fixed in this project trough an iterator ($i), which counts the "order" down for the prefixes.
   */
   $i: index($breakpoints, $breakpoint) + 1;
 
