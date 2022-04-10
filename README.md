@@ -11,7 +11,7 @@ display: _inline-flex_, _align-content_, _align-items_, _align-self_, _justify-c
 
 ## Contents
 - [Configuration](#configuration)
-- [Compiling](#compile)
+- [Build](#build)
 - [Usage and examples](#usage-and-examples)
 - [Development and contributing](#development-and-contributing)
 
@@ -35,7 +35,7 @@ $max-width: 1200px !default;
 $breakpoints: sm 48em 46rem, md 62em 61rem, lg 75em 71rem !default;
 ```
 
-## Compile
+## Build
 ### Command Line
 ```shell
 sass --update --style=compressed StrawberryGrid.scss:../dist/StrawberryGrid.min.css
